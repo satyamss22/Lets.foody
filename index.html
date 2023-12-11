@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .header {
+  padding: 80px;
+  text-align: center;
+  background: #fdff71;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* about */
+.about{
+  background-color: #bdf3ad;
+}
+
+.header.waviy {
+  background-color:  #fff952;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(237, 0, 0, 0.2));
+  font-size: 89%;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+  /* navbar */
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(255, 219, 88);
+  color: black;
+}
+
+.topnav a.active {
+ 
+  color: white;
+}
+/* food products */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+}
+
+ .card h2 { background-color: rgb(241, 85, 85);
+
+  }
+.price {
+  color: rgb(16, 16, 16);
+  font-size: 22px;
+}
+
+
+
+.card button:hover {
+  opacity: 0.7;
+}
+/* animation about */
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #f8e513 0%,
+    #15ebab 29%,
+    #ff1361 67%,
+    #ffe209 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 50% auto;
+  color: #fff;
+  background-clip: text;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+      font-size: 16px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+</style>
+<body>
+  
+    <div class="header"><div class="waviy">
+      <span style="--i:1">L</span>
+        <span style="--i:2">E</span>
+        <span style="--i:3">T</span>
+        <span style="--i:4">'</span>
+        <span style="--i:5">s</span>
+        <span style="--i:6">F</span>
+        <span style="--i:7">o</span>
+        <span style="--i:8">O</span>
+        <span style="--i:9">D</span>
+        <span style="--i:10">Y</span>
+      
+   
+     </div></div>
+     <!-- navbar -->
+     <div class="topnav">
+      <a class="active" href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+    </div>
+  </div>
+    <!-- about -->
+    <div class="about" id="about">
+      <h1>About</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> <p>
+              "A restaurant is a fantasy—a kind of living fantasy in which diners are the most important <br>
+      "I judge a restaurant by the bread and by the coffee." - Burt Lancaster
+      "The most essential part of my day is a proper dinner." - Rachael Ray
+      "A restaurant should remove you from the mundane burdens of everyday life and transport you to another world."<br>
+      "The only thing I like better than talking about food is eating." - John Walters
+      "Food is not just eating energy. It's an experience." <br>
+      
+      "Eating is a necessity but cooking is an art." 
+            </p1></h3>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+      <!-- lable code -->
+      <style>
+        .btn {
+          border: none;
+          border-radius: 5px;
+          padding: 12px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          background-color: #b8e419;
+          color: white;
+          position: relative;
+        }
+        
+        .ribbon {
+          width: 60px;
+          font-size: 14px;
+          padding: 4px;
+          position: absolute;
+          right: -25px;
+          top: -12px;
+          text-align: center;
+          border-radius: 25px;
+          transform: rotate(20deg);
+          background-color: #ff9800;
+          color: white;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>CSS Ribbon</h1>
+        
+        <h2 class="btn">Buy 2 Get 1 Free<span class="ribbon">NEW</span></h2>
+        
+       <!-- food products -->
+       <h2 style="text-align:center">Menu</h2>
+
+<div class="card"id="menu">
+  <img src="pizza1.jpeg" alt="Denim Jeans" style="width:100%">
+  <h1>Pizza</h1>
+  <p class="price">149rs</p>
+  <h2>I think of dieting, then I eat pizza.</h2>
+  
+</div>
+<div class="card">
+  <img src="paneer.jpeg" alt="Denim Jeans" style="width:100%">
+  <h1> Paneer  Pizza</h1>
+  <p class="price">139rs</p>
+  <h2>I think of dieting, then I eat pizza.</h2>
+  <div class="card">
+    <img src="images4.jpeg" alt="Denim Jeans" style="width:100%">
+    <h1> Tomato Pizza</h1>
+    <p class="price">129rs</p>
+    <h2>I think of dieting, then I eat pizza.</h2>
+    
+  </div>
+  <div class="card">
+    <img src="images2.jpeg" alt="Denim Jeans" style="width:100%">
+    <h1>onion Pizza</h1>
+    <p class="price">119rs</p>
+    <h2>I think of dieting, then I eat pizza.</h2>
+    
+  </div>
+  <div class="card">
+    <img src="images 5.jpeg" alt="Denim Jeans" style="width:100%">
+    <h1>cheese Pizza</h1>
+    <p class="price">109rs</p>
+    <h2>I think of dieting, then I eat pizza.</h2>
+    <div class="card"id="contact">
+     
+      
+      <p class="price"></p>
+     
+    
+  </div>
+  
+  <div class="zoomInDown">
+    <ul class="price">
+      <li class="header">contect us</li>
+      
+      <li> <address> address:Pathkhouli Azamgarh<br>
+      near Dr. S kumar home </address></li>
+      <li> Emails : wwwsarivastava 70@gmail com</li>
+      <li>phone: 6306651531</li>
+      
+      
+      <li class="grey"><a href="https://wa.me/message/QED2SY7TGUEYB1" class="button">whatsapp me</a></li>
+    </ul></div>
+  </div>
+  <style>
+    .zoomInDown {
+   -webkit-animation-name: zoomInDown;
+   animation-name: zoomInDown;
+   -webkit-animation-duration:  4s;
+   animation-duration:  infinite;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   }
+   @-webkit-keyframes zoomInDown {
+   0% {
+   opacity: 0;
+   -webkit-transform: scale3d(.2, .2, .2) translate3d(0, -1000px, 0);
+   transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+   -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+   animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+   }
+   60% {
+   opacity: 1;
+   -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+   transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+   animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+   }
+   }
+   @keyframes zoomInDown {
+   2% {
+   opacity: 0;
+   -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+   transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+   -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+   animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+   }
+   60% {
+   opacity: 1;
+   -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+   transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+   animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+   }
+   } 
+ 
+    /* graph porto */
+    .container {
+width: 100%;
+background-color: #e58484;
+}
+
+.skills {
+text-align: right;
+padding-top: 10px;
+padding-bottom: 10px;
+color: white;
+}
+
+.html {width: 79%; background-color: #7c7a7a;}
+.css {width: 12%; background-color: #7a7a7b;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+   
+.columns {
+        float: left;
+        width: 33.3%;
+        padding: 6px;
+      }
+      
+      .price {
+        list-style-type: none;
+        border: 1px solid #eee;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+      
+      .price:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+      }
+      
+      .price .header {
+        background-color: #ffff4c;
+        color: rgb(7, 7, 7);
+        font-size: 25px;
+      }
+      
+      .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+      }
+      
+      .button {
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      
+      @media only screen and (max-width: 600px) {
+        .columns {
+          width: 100%;
+        }
+      }
+      
+</style>
+
+  
+  
+</div>
+<!-- menu jss code -->
+<script>
+  
+
+  // Open and close sidebar
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+  
+
+
+</body>
+</html>
